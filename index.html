@@ -119,8 +119,9 @@
         }
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
         
-        .logo-txt { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--color-primary); }
-        .navbar.scrolled .logo-txt { color: var(--color-primary); }
+        /* Ajuste do Logo em Imagem */
+        .logo-img { max-height: 45px; width: auto; transition: var(--transition); }
+        .navbar.scrolled .logo-img { max-height: 38px; }
 
         .nav-menu { display: flex; gap: 25px; list-style: none; align-items: center; }
         .nav-link {
@@ -132,6 +133,12 @@
 
         .hamburger { display: none; cursor: pointer; font-size: 1.8rem; color: var(--color-white); }
         .navbar.scrolled .hamburger { color: var(--color-primary); }
+
+        /* Ajuste de proporção do botão no header */
+        .btn-header {
+            padding: 10px 24px; 
+            font-size: 0.85rem;
+        }
 
         /* ==========================================================================
            4. SEÇÕES PRINCIPAIS
@@ -302,7 +309,9 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo-txt">Sandra Mendes.</a>
+            <a href="#" class="logo">
+                <img src="COLOQUE_O_LINK_DO_LOGO_AQUI.png" alt="Sandra Mendes" class="logo-img">
+            </a>
             
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#estrategia" class="nav-link">Estratégia</a></li>
@@ -329,7 +338,7 @@
                 <p>Apoio executivo para quem não pode improvisar. Transforme impasses em acordos seguros através de método, leitura de cenário e inteligência emocional.</p>
                 <div class="hero-buttons">
                     <a href="#contato" class="btn btn-gold">Agendar Diagnóstico de Negociação</a>
-                    <a href="https://wa.me/5599999999999" class="btn btn-outline" target="_blank">Falar pelo WhatsApp</a>
+                    <a href="https://wa.me/5511920421562" class="btn btn-outline" target="_blank">Falar pelo WhatsApp</a>
                 </div>
             </div>
             <div class="hero-img-box reveal">
@@ -413,7 +422,7 @@
                 </div>
             </div>
             <div class="services-btn-area reveal">
-                <a href="https://wa.me/5599999999999" class="btn btn-outline" target="_blank">Preciso de ajuda com uma negociação</a>
+                <a href="https://wa.me/5511920421562" class="btn btn-outline" target="_blank">Preciso de ajuda com uma negociação</a>
             </div>
         </div>
     </section>
@@ -505,7 +514,7 @@
             <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Garanta a melhor posição na mesa. Fale comigo antes de tomar sua próxima decisão estratégica.</p>
             <div class="cta-buttons">
                 <a href="mailto:contato@sandramendesadv.com.br" class="btn btn-white" style="background: white; color: var(--color-primary);">Solicitar Diagnóstico de Negociação</a>
-                <a href="https://wa.me/5599999999999" class="btn btn-outline" style="border-color: white; color: white !important;" target="_blank">Falar pelo WhatsApp</a>
+                <a href="https://wa.me/5511920421562" class="btn btn-outline" style="border-color: white; color: white !important;" target="_blank">Falar pelo WhatsApp</a>
             </div>
         </div>
     </section>
@@ -521,7 +530,7 @@
                     <h4>Contato</h4>
                     <ul class="footer-links">
                         <li><i class="fas fa-envelope" style="color:var(--color-gold); margin-right:8px;"></i> contato@sandramendesadv.com.br</li>
-                        <li><i class="fas fa-phone" style="color:var(--color-gold); margin-right:8px;"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-phone" style="color:var(--color-gold); margin-right:8px;"></i> (11) 92042-1562</li>
                         <li><i class="fas fa-map-marker-alt" style="color:var(--color-gold); margin-right:8px;"></i> Rua Dr. Luiz Migliano, 1986 - 1120<br>Jardim Caboré, São Paulo - SP</li>
                     </ul>
                 </div>
@@ -543,7 +552,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5599999999999" class="btn-whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/5511920421562" class="btn-whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
